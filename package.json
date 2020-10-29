@@ -1,0 +1,45 @@
+{
+	"name": "my",
+	"version": "1.0.0",
+	"description": "тест",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/from0toweb/repair-design.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/from0toweb/repair-design/issues"
+	},
+	"homepage": "https://github.com/from0toweb/repair-design#readme",
+	"devDependencies": {
+		"@babel/core": "^7.11.6",
+		"@babel/preset-env": "^7.11.5",
+		"babel-loader": "^8.1.0",
+		"browser-sync": "^2.26.13",
+		"core-js": "^3.6.5",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-if": "^3.0.0",
+		"gulp-ttf2woff": "^1.1.1",
+		"gulp-ttf2woff2": "^3.0.0",
+		"webpack": "^4.44.2",
+		"webpack-stream": "^6.1.0"
+	},
+	"dependencies": {
+		"cross-fetch": "^3.0.6",
+		"del": "^5.1.0",
+		"element-closest": "^3.0.2",
+		"formdata-polyfill": "^3.0.20",
+		"gulp-fonter": "^0.3.0",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-sass": "^4.1.0",
+		"nodelist-foreach-polyfill": "^1.2.0",
+		"promise-polyfill": "8.2.0"
+	}
+}

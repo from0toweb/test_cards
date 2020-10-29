@@ -1,0 +1,228 @@
+*
+    box-sizing: border-box
+html
+    font-family: 'Montserrat', sans-serif
+body
+    margin: 0
+    padding: 0
+h2, p
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+    color: inherit
+img
+    max-width: 100%
+    width: 100%
+    height: 100%
+    object-fit: cover
+.container
+    max-width: 1200px
+    width: 100%
+    margin: auto
+    padding-top: 30px
+.product
+    position: relative
+    width: 980px
+    padding: 15px
+    margin: auto
+    border: 1px solid #ccc
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+    &__status
+        position: absolute
+        right: 15px
+        top: 15px
+        color: green
+        font-size: 14px
+        border-bottom: 1px dotted green
+        &:hover
+            border-bottom: none
+    &__image
+        width: 200px
+        height: 200px
+        margin-right: 20px
+        align-self: center
+    &__description
+        position: relative
+        padding-top: 30px
+        max-width: 465px
+        margin-right: auto
+    &__code
+        position: absolute
+        top: 0
+        left: 0
+        font-size: 12px
+        display: block
+
+        color: #545454
+    &__title
+        display: block
+        font-size: 16px
+        font-weight: 600
+        margin-bottom: 20px
+        line-height: 1.5
+        &:hover
+            text-decoration: underline
+    &__needed
+        color: #545454
+        font-size: 14px
+        line-height: 1.4
+        & span
+            font-weight: 600
+        & a
+            &:hover
+                text-decoration: underline
+
+    &__price
+        padding-top: 30px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+    &__club,
+    &__standart
+        font-size: 14px
+        display: inline-block
+        text-align: right
+    &__scores
+        margin-top: 10px
+        font-size: 12px
+        line-height: 17px
+        color: #999
+        margin-bottom: 10px
+    &__tabs
+        margin-bottom: 10px
+    &__tab
+        cursor: pointer
+        font-size: 13px
+        line-height: 13px
+        color: #707070
+        border-bottom: 1px dotted #707070
+        transition: border-width 0.3s
+        &:hover
+            border-bottom: 0px
+        &.active-tab
+            background-color: #000000
+            color: #fff
+            padding: 3px 5px
+            border-bottom: none
+    &__tooltip
+        position: relative
+        width: 100%
+        padding: 7px 10px
+        border: 1px solid #ccc
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        background-color: #fff
+        &::before,
+        &::after
+            top: 100%
+            left: 10%
+            border: solid transparent
+            content: ""
+            height: 0
+            width: 0
+            position: absolute
+            pointer-events: none
+        &::before
+            border-color: rgba(204, 204, 204, 0)
+            border-top-color: #ccc
+            border-width: 9px
+            margin-left: -9px
+        &::after
+            border-color: rgba(255, 255, 255, 0)
+            border-top-color: #fff
+            border-width: 8px
+            margin-left: -8px
+    &__basket
+        width: 100%
+        display: flex
+        justify-content: space-between
+    &__to-basket
+        cursor: pointer
+        border: none
+        color: #ffffff
+        background-color: orange
+        text-transform: uppercase
+        padding: 10px
+        width: 140px
+        font-size: 14px
+        transition: 0.3s
+        &:hover
+            background-color: #333
+.card,
+.standart,
+.score
+    &__price
+        display: none
+.card,
+.standart
+    &__price
+        font-weight: 600
+        font-size: 25px
+        margin-left: 15px
+.standart
+    &__price
+        color: #a7a7a7
+.active-price
+    display: inline-block
+.tooltip
+    &__text
+        font-size: 13px
+    &__icon
+        width: 15px
+        height: 15px
+        background: url(../icons/unit--i.png) no-repeat center center/100%
+        margin-right: 10px
+.input
+    width: 100%
+    height: 100%
+    border: none
+    text-align: center
+    border-right: 1px solid #ccc
+    &__group
+        display: flex
+        width: 65px
+        border: 1px solid #ccc
+        margin-right: 7px
+    &__buttons
+        width: 25px
+        display: flex
+        flex-direction: column
+.button
+    &__plus,
+    &__minus
+        cursor: pointer
+        height: 50%
+    &__plus
+        background: url(../icons/top-arrow.svg) no-repeat center center/60%
+        border-bottom: 1px solid #ccc
+    &__minus
+        background: url(../icons/down-arrow.svg) no-repeat center center/60%
+input[type='number']
+    -moz-appearance: textfield
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+
+@media screen and ( max-width: 991px )
+    .product
+        flex-direction: column
+        width: 260px
+        padding-top: 40px
+        &__code
+            top: 17px
+            left: 15px
+        &__description
+            position: static
+        &__image
+            margin-right: 0
+        &__needed
+            display: none
+        &__price
+            padding-top: 0
+        &__tooltip
+            display: none
