@@ -17,7 +17,7 @@ const fonter = require('gulp-fonter');
 const webpack = require('webpack-stream');
 const gilpIf = require('gulp-if');
 
-const isDev = true;
+const isDev = false;
 const isProd = !isDev;
 
 const webpackConfig = {
