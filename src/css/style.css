@@ -199,7 +199,8 @@ img {
   height: 100%;
   border: none;
   text-align: center;
-  border-right: 1px solid #ccc; }
+  border-right: 1px solid #ccc; 
+  min-width: 0}
   .input__group {
     display: -webkit-box;
     display: flex;
